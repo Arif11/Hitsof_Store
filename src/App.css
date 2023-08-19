@@ -1,0 +1,1142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+header
+{
+    height: 90px;
+    background: lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.logo
+{
+    height: 80px;
+}
+
+.navbox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 0;
+    height: 90px;
+}
+
+.navlink
+{
+    font-size: 25px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.border::after
+{
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    height: 40px;
+    width: 0;
+    border-bottom: 4px solid #000;
+    transition: all 0.6s;
+}
+
+.border:hover::after
+{
+    width: 100%;
+}
+
+.cart-box
+{
+    position: relative;
+}
+
+.cart-icon
+{
+    position: relative;
+    font-size: 40px;
+}
+
+.cart-items
+{
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    height: 40px;
+    width: 40px;
+    background: #dbbb03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+.menu-icons
+{
+    display: none;
+}
+
+.menu-close
+{
+    display: none;
+}
+
+
+
+
+
+.container
+{
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 40px;
+}
+
+.grid
+{
+    display: grid;
+    gap: 20px;
+    padding: 30px;
+}
+.gridlist
+{
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+}
+
+.grid-column-two
+{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.grid-three-clumn
+{
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.grid-four-column
+{
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.grid-repeat
+{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    padding: 60px 40px;
+}
+
+.repeat
+{
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+button
+{
+    padding: 10px 20px;
+    background: #000;
+    border: none;
+    color: #fff;
+    margin: 20px 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.title
+{
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.heading
+{
+    text-transform: uppercase;
+}
+
+.desc
+{
+    text-align: justify;
+}
+
+.hero-img
+{
+    width: 100%;
+    position: relative;
+}
+
+.heroimg
+{
+    width: 100%;
+}
+
+.service-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 20px;
+    margin: 60px 120px;
+}
+
+.services
+{
+    height: 280px;
+    background: lightgray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon 
+{
+    font-size: 30px;
+    color: #230980;
+    margin-bottom: 10px;
+}
+
+.bg
+{
+    background: transparent;
+    text-align: center;
+}
+
+.bg-1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: lightgray;
+    border-radius: 20px;
+    height: 50%;
+    width: 100%;
+}
+
+.trusted-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.companies
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 20px;
+    padding: 0 30px;
+    width: 100%;
+}
+
+.companies img
+{
+    height: 80px;
+}
+
+.flex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.contact-title
+{
+    margin-bottom: 30px;
+}
+
+iframe
+{
+    margin-bottom: 60px;
+}
+
+.contact-form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px;
+    padding: 0 20px;
+}
+
+textarea
+{
+    resize: none;
+}
+
+/* ---------------------------Footer css -------------------------------- */
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 30px;
+    background: #464343;
+    color: #fff;
+}
+
+.footer-section
+{
+    padding: 0 20px;
+}
+
+.tlogo
+{
+    height: 50px;
+    margin: 0  10px;
+}
+
+.fspan
+{
+    font-size: 30px;
+}
+
+.fdesc
+{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.finput
+{
+    height: 40px;
+    margin-top: 10px;
+    width: 230px;
+}
+
+.ficon
+{
+    font-size: 40px;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+/* ------------------------------Error Page css------------------------------------- */
+
+.errorpage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://blog.thomasnet.com/hubfs/shutterstock_774749455.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* ---------------------------feature section css ---------------------- */
+
+section
+{
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.card
+{
+    /* background: lightgray; */
+    background: #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 20px;
+
+}
+
+figure
+{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    color: #000;
+    cursor: pointer;
+}
+
+figure::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 0;
+    transition: 0.6s;
+}
+
+figure:hover::after
+{
+    width: 100%;
+}
+
+
+figure img
+{
+    width: 90%;
+    /* height: 220px; */
+    border-radius: 8px;
+    transition: 0.6s;
+    margin-top: 20px;
+}
+
+figure:hover img
+{
+    transform: scale(1.2);
+}
+
+.caption
+{
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    background: #cacaca;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product-desc
+{
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.card-data
+{
+    width: 100%;
+    height: 70px;
+}
+
+.data-flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+/* --------------------------Single Product page css -------------------------------- */
+
+.sheading
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    background: lightgray;
+    padding: 0 30px;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+.single-data-box
+{
+    display: grid;
+    gap: 15px;
+}
+
+.snavlink
+{
+    text-decoration: none;
+}
+
+
+.singletitle
+{
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.deal
+{
+    color: #230980;
+}
+
+.warenty-section
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.warenty
+{
+    text-align: center;
+}
+
+.warenty-icon
+{
+    background: #d8d8d8;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+hr
+{
+    height: 4px;
+    width: 100%;
+    background: #000;
+}
+
+.fontweight
+{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.single-btn
+{
+    width: 200px;
+}
+
+/* -------------------------single Image css------------------ */
+
+.images-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section 
+{
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.grid-img
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    place-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.img 
+{
+    width: 100%;
+}
+
+.main-screen
+{
+    display: grid;
+    place-items: center;
+}
+
+.img-main
+{
+    width: 100%;
+}
+
+/* -------------------Star css------------------------ */
+
+.star 
+{
+    display: flex;
+    gap: 10px;
+}
+
+.star-icon
+{
+    font-size: 25px;
+    color: orange;
+}
+
+
+/* --------------------------------AddToCart CSS------------------------------- */
+
+.color-style
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.color-btn
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.color-btn:hover
+{
+    opacity: 1;
+}
+
+.activebtn
+{
+    opacity: 1;
+}
+
+.check-icon
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.amount-flex
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 15px;
+}
+
+.amount-icon
+{
+    background: transparent;
+    font-size: 30px;
+    color: #000;
+}
+
+.amount-btn
+{
+    background: transparent;
+    height: 50px;
+    width: 50px;
+}
+
+.amount 
+{
+    margin-left: 15px;
+    width: 10px;
+    font-size: 25px;
+}
+
+
+
+/* -----------------------Products section css----------------------------------- */
+
+.products-section
+{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    gap: 15px;
+}
+
+/* --------------------List view css------------------------------- */
+.cardlist
+{
+    width: 80%;
+}
+
+.Listdesc
+{
+    margin-top: 45px;
+}
+
+.list-title
+{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.Listdesc p
+{
+    margin-bottom: 10px;
+}
+
+.price
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: orangered;
+}
+
+.btn-view
+{
+    position: relative;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    color: #000;
+    background: #b8b4b4;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.btn-view.active
+{
+    color: #fff;
+    background: #000;
+}
+
+.icon-view
+{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.filter-flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+select
+{
+    cursor: pointer;
+}
+
+.filter-flex-box
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    border: 1px solid #000;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.search-box
+{
+    margin-left: 10px;
+    height: 30px;
+}
+
+.category-flex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.display-flex-column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-category
+{
+    display: flex;
+    background: #fff;
+    color: #000;
+    border: none;
+    margin: 10px;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.btn-category:hover, .active
+{
+    color: #f713ff;
+}
+
+.company-filter
+{
+    margin-left: 10px;
+}
+
+.company-select
+{
+    margin: 20px;
+    height: 30px;
+    width: 120px;
+}
+
+.color-filter
+{
+    margin: 15px;
+}
+
+.color-filter-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.filter-all-btn
+{
+    background: transparent;
+    color: #000;
+}
+
+.color-margin
+{
+    margin-left: 2rem;
+}
+
+.clear-filter-btn
+{
+    background: red;
+}
+
+/* ---------------------------Cart css start here------------------------------- */
+
+.cart 
+{
+    margin: 30px 60px;
+}
+
+.cart-title
+{
+    font-size: 25px;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 1fr 0.7fr 0.7fr 0.7fr 0.7fr ;
+    place-items: center;
+    padding: 10px 30px;
+}
+
+.cart-image-box
+{
+    display: flex;
+    padding: 20px 0;
+}
+
+.cart-image-box img
+{
+    width: 100px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+.img-title
+{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.color-div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cart-color
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.cart-container
+{
+    display: grid;
+    grid-template-columns: 1fr 0.7fr 0.7fr 0.7fr 0.7fr ;
+    place-items: center;
+    padding: 0 70px;
+}
+
+.btn-remove
+{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+
+}
+
+.remove-icon
+{
+    color: red;
+    font-size: 32px;
+}
+
+.cart-quantity
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-btns
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.cart-btn
+{
+    background: #2f7ef5;
+    text-transform: uppercase;
+}
+
+.del 
+{
+    background: red;
+}
+
+.cart-total
+{
+    width: 100%;
+    margin: 4.8rem 0;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cart-subtotal
+{
+    border: 0.1rem solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding: 3.2rem;
+}
+
+.sub-div
+{
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    place-items: end;
+}
+
+.sub-div:last-child
+{
+    font-weight: 700;
+}
+
+
+.cart-empty
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* --------------------------Media section------------------------- */
+
+@media(max-width:816px)
+{
+    header
+        {
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            height: 120px;
+        }
+
+    .navlink
+    {
+        line-height: 90px;
+        font-size: 40px;
+    }
+
+    .contact-form
+    {
+        width: 100%;
+    }
+
+    .menu-icons
+    {
+        display: inline-block;
+    }
+
+    .repeat
+    {
+        display: block;
+    }
+
+    .navbox
+    {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background: #fff;
+        top: 0;
+        left: 100%;
+        z-index: 9999;
+    }
+
+
+    .menu-icons
+    {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .cart-items
+    {
+        top: 0;
+        left: 45px;
+    }
+
+    .active .navbox
+    {
+        display: flex;
+        top: 0;
+        left: 0;
+    }
+
+    .active .menu-link
+    {
+        font-size: 55px;
+        display: none;
+        position: absolute;
+        top: 25px;
+        right: 10%;
+        z-index: 9999;
+    }
+
+    .menu-link
+    {
+        font-size: 55px;
+        position: absolute;
+        top: 25px;
+        right: 10%;
+        z-index: 9999;
+    }
+
+    .active .menu-close
+    {
+        color: #000;
+        display: inline-block;
+        border: 4px solid black;
+        border-radius: 5px;
+    }
+
+    
+
+    .grid
+    {
+        display: block;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .service-container
+        {
+            margin: 60px 20px;
+        }
+
+        .section 
+        {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        .grid-img
+        {
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .products-section
+        {
+            display: block;
+        }
+
+        .search-box
+        {
+            width: 92%;
+            height: 60px;
+        }
+
+        .cart-hide
+        {
+            display: none;
+        }
+
+        .cart-container
+        {
+            grid-template-columns: 1fr  1fr 1fr ;
+            padding: 0;
+        }
+        .cart-image-box
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .cart-image-box img
+        {
+            width: 80px;
+            height: 60px;
+            margin-right: 15px;
+        }
+
+        .img-title
+            {
+                text-transform: capitalize;
+                font-size: 16px;
+            }
+
+
+            .cart-title
+            {
+            grid-template-columns: 1fr  0.6fr 0.6fr ;
+            gap: 10px;
+            }
+}
